@@ -71,8 +71,8 @@ DATABASES = {
         'NAME': env.str('DB_NAME', 'newsfeed'),
         'USER': env.str('DB_USERNAME', 'postgres'),
         'PASSWORD': env.str('DB_PASSWORD', 'postgres'),
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'HOST': env.str('DB_HOST', 'localhost'),
+        'PORT': env.str('DB_PORT', '5432'),
     }
 }
 
